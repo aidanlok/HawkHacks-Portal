@@ -16,5 +16,6 @@ CREATE TABLE participants
     security_ans_3  text NOT NULL,
     uuid            text NOT NULL,
     team_id         int,
-    CONSTRAINT fk_team_id FOREIGN KEY (team_id) REFERENCES teams (id) ON DELETE SET NULL
+    CONSTRAINT fk_team_id FOREIGN KEY (team_id) REFERENCES teams (id) ON DELETE SET NULL,
+    private_key     text NOT NULL
 );

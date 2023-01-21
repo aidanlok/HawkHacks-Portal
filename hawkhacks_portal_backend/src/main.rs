@@ -6,6 +6,8 @@ use crate::database::{db};
 use crate::models::{migration};
 
 mod custom_types;
+mod security_questions;
+mod schema;
 mod database;
 mod models;
 
